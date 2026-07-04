@@ -187,7 +187,7 @@ def check_card(cc_input):
         if status == 'requires_action':
             return result_json(n, m, y, c, "3DS Required", elapsed(start_time))
         elif status == 'succeeded':
-            return result_json(n, m, y, c, "Charged $9.00 ✅", elapsed(start_time))
+            return result_json(n, m, y, c, "Charged $1.00 ✅", elapsed(start_time))
         elif status == 'requires_payment_method':
             err_key = 'last_setup_error' if intent_type == 'setup' else 'last_payment_error'
             err_obj = confirm.get(err_key, {})
