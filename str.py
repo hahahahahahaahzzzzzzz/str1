@@ -222,7 +222,7 @@ def result_json(n, m, y, c, response, t):
     return {
         "card": f"{n}|{m}|{y}|{c}",
         "credit": "@xoxhunterxd",
-        "gateway": "Stripe 9 USD",
+        "gateway": "Stripe 1 USD",
         "response": sanitize(response),
         "time": f"{t}s"
     }
